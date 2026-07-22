@@ -1,0 +1,101 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Cores
+\definecolor{linkcolor}{RGB}{0,70,130}
+
+% Configuração dos links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor
+}
+
+% Formatação das seções (títulos em MAIÚSCULAS diretamente)
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Remover numeração de página
+\pagenumbering{gobble}
+
+% Espaçamento padrão das listas
+\setlist[itemize]{nosep, leftmargin=*}
+
+\begin{document}
+
+% Cabeçalho
+\begin{center}
+    {\LARGE\bfseries Caio Fodra} \\[4pt]
+    Desenvolvedor de Software --- Backend e IA Aplicada \\[6pt]
+    \href{mailto:caiofodra@proton.me}{caiofodra@proton.me} \enspace$\cdot$\enspace
+    Curitiba, PR \\[2pt]
+    \href{https://linkedin.com/in/caiofodra}{linkedin.com/in/caiofodra} \enspace$\cdot$\enspace
+    \href{https://github.com/caio-fodra}{github.com/caio-fodra}
+\end{center}
+
+\section{COMPETÊNCIAS TÉCNICAS}
+\noindent\textbf{Linguagens:} Python, Java, JavaScript (Node.js) \\
+\textbf{Dados e Machine Learning:} Pandas, NumPy, scikit-learn, XGBoost; métricas (precisão, recall, F1) \\
+\textbf{IA, NLP e Visão Computacional:} LSTM, CNN, Transfer Learning, TensorFlow/Keras \\
+\textbf{IA Generativa:} LLMs, engenharia de prompts, RAG, agentes com CrewAI, integração via APIs \\
+\textbf{Desenvolvimento Web:} APIs REST, Spring Boot, FastAPI, arquitetura de microsserviços \\
+\textbf{Bancos de Dados:} PostgreSQL, MongoDB, SQL \\
+\textbf{Automação e Low-Code:} N8N, Power Platform, UiPath, Automation Anywhere \\
+\textbf{Cloud e DevOps:} AWS, Docker, Linux; monitoramento e análise de logs \\
+\textbf{Boas Práticas:} Git/GitHub, versionamento de código
+
+\section{EXPERIÊNCIA PROFISSIONAL}
+\noindent
+\textbf{Go On Associated} \hfill \textit{2024 -- Presente} \\
+\textit{Desenvolvimento Backend e IA Aplicada -- Junior}
+\begin{itemize}
+    \item \textbf{Leitor Inteligente de PDFs com LLMs e Agentes:} para substituir o processo manual de leitura de notas fiscais de empresas, desenvolvi um sistema multiagente com CrewAI --- agentes extrator, analisador e sintetizador orquestrados em pipeline sequencial, com encadeamento de contexto, engenharia de prompts avançada e integração via APIs de LLMs. Em produção, processa grande volume de documentos com precisão próxima de 90\%, reduzindo fortemente o tempo de extração.
+    \item \textbf{Portal GPS (Cargill) --- Sustentação em Produção:} atuei na sustentação do portal de relacionamento da Cargill com produtores rurais (contratos, entregas, pagamentos e posição financeira em tempo real, para uma base de 26 mil clientes), investigando e diagnosticando problemas reportados por usuários com consultas SQL em PostgreSQL, análise de logs e monitoramento via Datadog, em comunicação direta com o time internacional de desenvolvimento. As correções e melhorias conduzidas reduziram o tempo de resolução de chamados.
+    \item \textbf{Portal CRT --- Class Release Tool (Cargill):} desenvolvi melhorias e correções de bugs na aplicação web Class Release Tool (CRT), entregando evoluções em TypeScript em colaboração com o time de desenvolvimento para aumentar a estabilidade da aplicação em produção.
+    \item \textbf{Portal de Acordos (Cargill):} desenvolvi melhorias e correções de bugs na aplicação web do Portal de Acordos, implementando evoluções em TypeScript e contribuindo para a confiabilidade e a manutenção contínua do sistema.
+    \item \textbf{Symphony --- Gerenciamento de Orquestrações JDE:} desenvolvi uma aplicação backend em Spring Boot para gerenciamento de orquestrações do JD Edwards, construindo APIs REST escaláveis e modelando regras de negócio complexas em arquitetura de microsserviços.
+    \item \textbf{Sistema de Gerenciamento de Laboratório (Electrolux):} integrei o time responsável por migrar o sistema legado em Lotus Notes, em vias de desativação, para uma solução moderna e automatizada em Power Platform (Power Apps, Power Automate e Dataverse como banco de dados), atuando na automação dos processos laboratoriais e na integração de fluxos críticos entre sistemas, em colaboração com equipes internacionais. A solução entrou em produção e reduziu tempo de execução e erros operacionais.
+\end{itemize}
+\vspace{8pt}
+
+\noindent
+\textbf{Practia Global} \hfill \textit{2022 -- 2023} \\
+\textit{Automação e Transformação Digital -- Estágio}
+\begin{itemize}
+    \item \textbf{Office Manager:} para evitar a superlotação dos espaços durante a pandemia, desenvolvi um aplicativo de reserva de mesas e salas de reunião com controle de ocupação. Adotado por toda a empresa, resolveu o problema de ocupação e passou a fornecer dados de monitoramento e KPIs para o RH.
+    \item \textbf{Home Office Health App:} desenvolvi uma aplicação que enviava lembretes periódicos de cuidados com saúde e bem-estar aos colaboradores durante o home office na pandemia, alcançando mais de 200 colaboradores (toda a empresa), com bom engajamento e reconhecimento do time e do RH.
+    \item \textbf{Treinamento Digital Belt:} conduzi a capacitação de 10 profissionais --- perfis de gerência, negócios e análise de grandes empresas nacionais, como Syngenta e Embraer --- para se tornarem usuários avançados de Power Apps e Power Automate.
+\end{itemize}
+
+\section{PROJETOS PESSOAIS EM IA E MACHINE LEARNING}
+\begin{itemize}
+    \item \textbf{Multi-Agent Research System:} sistema com 4 agentes (Searcher, Analyst, Writer e Reviewer) orquestrados via CrewAI, com pipeline em FastAPI, streaming SSE, interface Streamlit e integração com a Tavily API.
+    \item \textbf{Visão Computacional:} classificação de câncer e detecção de COVID-19 com CNN e Transfer Learning (MobileNetV2 e Xception), com data augmentation e fine-tuning.
+    \item \textbf{NLP:} classificação de spam com LSTM, BiLSTM e Universal Sentence Encoder, comparando arquiteturas por métricas.
+    \item \textbf{Modelagem Preditiva:} predição de movimento de ações (Tesla) com Logistic Regression, SVM e XGBoost, avaliada por ROC-AUC.
+    \item \textbf{Classificação Multiclasse e Redes Neurais:} Naive Bayes para categorização textual e MLP para reconhecimento de dígitos manuscritos.
+\end{itemize}
+
+\section{FORMAÇÃO ACADÊMICA}
+\noindent
+\textbf{Bacharelado em Sistemas de Informação} \hfill \textit{2020 -- Presente} \\
+\textit{Universidade Tecnológica Federal do Paraná (UTFPR)} \hfill \textit{Curitiba, Brasil}
+
+\section{CURSOS E CERTIFICAÇÕES}
+\begin{itemize}
+    \item \textbf{Formação Cloud Engineer 4.0} --- Data Science Academy \textit{(em andamento)}: Arquiteto de Soluções AWS (120h), Databricks --- IA e Agentes de IA (96h), Snowflake (96h), Google BigQuery (86h), Microsoft Fabric (84h).
+    \item \textbf{AWS Cloud Practitioner Essentials} \enspace$\cdot$\enspace \textbf{Machine Learning Foundations}
+    \item \textbf{Formação em Data Science com Python} --- Data Science Academy: Análise Estatística (84h), Big Data Real-Time Analytics com Spark (72h), Análise de Dados (72h), Fundamentos para Análise de Dados (60h).
+    \item \textbf{Lean Six Sigma Yellow Belt} (Setec) \enspace$\cdot$\enspace \textbf{Trilha de Desenvolvedor RPA} (Practia Brasil)
+\end{itemize}
+
+\section{IDIOMAS}
+\noindent Português (Nativo) \enspace$\cdot$\enspace Inglês (Fluente --- certificado TOEFL)
+
+\end{document}
