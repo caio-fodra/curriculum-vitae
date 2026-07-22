@@ -1,0 +1,101 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Colors
+\definecolor{linkcolor}{RGB}{0,70,130}
+
+% Link configuration
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor
+}
+
+% Section formatting (titles directly in UPPERCASE)
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+% Default list spacing
+\setlist[itemize]{nosep, leftmargin=*}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE\bfseries Caio Fodra} \\[4pt]
+    Software Developer --- Backend \& Applied AI \\[6pt]
+    \href{mailto:caiofodra@proton.me}{caiofodra@proton.me} \enspace$\cdot$\enspace
+    Curitiba, Brazil \\[2pt]
+    \href{https://linkedin.com/in/caiofodra}{linkedin.com/in/caiofodra} \enspace$\cdot$\enspace
+    \href{https://github.com/caio-fodra}{github.com/caio-fodra}
+\end{center}
+
+\section{TECHNICAL SKILLS}
+\noindent\textbf{Languages:} Python, Java, JavaScript (Node.js) \\
+\textbf{Data \& Machine Learning:} Pandas, NumPy, scikit-learn, XGBoost; metrics (precision, recall, F1) \\
+\textbf{AI, NLP \& Computer Vision:} LSTM, CNN, Transfer Learning, TensorFlow/Keras \\
+\textbf{Generative AI:} LLMs, prompt engineering, RAG, agents with CrewAI, API integration \\
+\textbf{Web Development:} REST APIs, Spring Boot, FastAPI, microservices architecture \\
+\textbf{Databases:} PostgreSQL, MongoDB, SQL \\
+\textbf{Automation \& Low-Code:} N8N, Power Platform, UiPath, Automation Anywhere \\
+\textbf{Cloud \& DevOps:} AWS, Docker, Linux; monitoring and log analysis \\
+\textbf{Best Practices:} Git/GitHub, code versioning
+
+\section{PROFESSIONAL EXPERIENCE}
+\noindent
+\textbf{Go On Associated} \hfill \textit{2024 -- Present} \\
+\textit{Backend Development \& Applied AI -- Junior}
+\begin{itemize}
+    \item \textbf{Intelligent PDF Reader with LLMs and Agents:} to replace the manual process of reading company invoices, I built a multi-agent system with CrewAI --- extractor, analyzer, and synthesizer agents orchestrated in a sequential pipeline, with context chaining, advanced prompt engineering, and integration through LLM APIs. Now in production, it processes a large volume of documents with nearly 90\% accuracy, sharply reducing extraction time.
+    \item \textbf{GPS Portal (Cargill) --- Production Support:} supported Cargill's relationship portal for rural producers (contracts, deliveries, payments, and real-time financial position for a base of 26,000 clients), investigating and diagnosing user-reported issues through SQL queries in PostgreSQL, log analysis, and monitoring via Datadog, in direct communication with the international development team. The fixes and improvements I delivered reduced ticket resolution time.
+    \item \textbf{CRT Portal --- Class Release Tool (Cargill):} developed enhancements and bug fixes for the Class Release Tool (CRT) web application, delivering improvements in TypeScript in collaboration with the development team to increase the application's stability in production.
+    \item \textbf{Agreements Portal (Cargill):} developed enhancements and bug fixes for the Agreements Portal web application, implementing improvements in TypeScript and contributing to the system's reliability and ongoing maintenance.
+    \item \textbf{Symphony --- JDE Orchestration Management:} developed a Spring Boot backend application to manage JD Edwards orchestrations, building scalable REST APIs and modeling complex business rules within a microservices architecture.
+    \item \textbf{Laboratory Management System (Electrolux):} joined the team responsible for migrating the legacy Lotus Notes system, slated for decommissioning, to a modern, automated solution on Power Platform (Power Apps, Power Automate, and Dataverse as the database), working on the automation of laboratory processes and the integration of critical flows between systems, in collaboration with international teams. The solution went into production and cut execution time and operational errors.
+\end{itemize}
+\vspace{8pt}
+
+\noindent
+\textbf{Practia Global} \hfill \textit{2022 -- 2023} \\
+\textit{Automation \& Digital Transformation -- Internship}
+\begin{itemize}
+    \item \textbf{Office Manager:} to prevent overcrowding during the pandemic, I built a desk and meeting-room booking app with occupancy control. Adopted company-wide, it solved the occupancy problem and began supplying monitoring data and KPIs to HR.
+    \item \textbf{Home Office Health App:} developed an application that sent periodic health and well-being reminders to employees during remote work in the pandemic, reaching more than 200 employees (the entire company), with strong engagement and recognition from the team and HR.
+    \item \textbf{Digital Belt Training:} led the training of 10 professionals --- management, business, and analyst profiles from major Brazilian companies such as Syngenta and Embraer --- to become advanced users of Power Apps and Power Automate.
+\end{itemize}
+
+\section{PERSONAL PROJECTS IN AI \& MACHINE LEARNING}
+\begin{itemize}
+    \item \textbf{Multi-Agent Research System:} system with 4 agents (Searcher, Analyst, Writer, and Reviewer) orchestrated via CrewAI, with a FastAPI pipeline, SSE streaming, a Streamlit interface, and Tavily API integration.
+    \item \textbf{Computer Vision:} cancer classification and COVID-19 detection with CNNs and Transfer Learning (MobileNetV2 and Xception), using data augmentation and fine-tuning.
+    \item \textbf{NLP:} spam classification with LSTM, BiLSTM, and Universal Sentence Encoder, comparing architectures by metrics.
+    \item \textbf{Predictive Modeling:} stock movement prediction (Tesla) with Logistic Regression, SVM, and XGBoost, evaluated by ROC-AUC.
+    \item \textbf{Multiclass Classification \& Neural Networks:} Naive Bayes for text categorization and an MLP for handwritten digit recognition.
+\end{itemize}
+
+\section{EDUCATION}
+\noindent
+\textbf{Bachelor's Degree in Information Systems} \hfill \textit{2020 -- Present} \\
+\textit{Federal University of Technology --- Paraná (UTFPR)} \hfill \textit{Curitiba, Brazil}
+
+\section{COURSES \& CERTIFICATIONS}
+\begin{itemize}
+    \item \textbf{Cloud Engineer 4.0 Program} --- Data Science Academy \textit{(in progress)}: AWS Solutions Architect (120h), Databricks --- AI and AI Agents (96h), Snowflake (96h), Google BigQuery (86h), Microsoft Fabric (84h).
+    \item \textbf{AWS Cloud Practitioner Essentials} \enspace$\cdot$\enspace \textbf{Machine Learning Foundations}
+    \item \textbf{Data Science with Python Program} --- Data Science Academy: Statistical Analysis (84h), Big Data Real-Time Analytics with Spark (72h), Data Analysis (72h), Fundamentals of Data Analysis (60h).
+    \item \textbf{Lean Six Sigma Yellow Belt} (Setec) \enspace$\cdot$\enspace \textbf{RPA Developer Track} (Practia Brasil)
+\end{itemize}
+
+\section{LANGUAGES}
+\noindent Portuguese (Native) \enspace$\cdot$\enspace English (Fluent --- TOEFL certified)
+
+\end{document}
