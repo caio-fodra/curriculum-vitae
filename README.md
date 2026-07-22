@@ -1,7 +1,8 @@
-CV / Curriculum Vitae
+# CV / Curriculum Vitae
 
 LaTeX source files for my CV in multiple languages.
 
-Files
-cv_en.tex - English version
-cv_pt.tex - Portuguese (BR) version
+## Files
+
+- `cv_en.tex` - English version
+- `cv_pt.tex` - Portuguese (BR) version
